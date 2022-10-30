@@ -1,0 +1,79 @@
+<html>
+<title>Exploring climate risks</title>
+<body>
+
+<h1 style="background-color:rgb(180, 176, 230);">Exploring your asset's climate risks - it's more fun than it sounds (I promise!)</h1>    
+
+<h2>What is the asset's</h2>
+
+<form action= "/asset_metric_result_for_year", method="post">
+<select name="metric_1" id="metric_1">
+    <option value="VAR">VAR</option>
+    <option value="Failure Probability">Failure Probability</option>
+    <option value="TIP">TIP</option>   
+</select>
+
+<h2>in the year</h2>
+
+<select name="year_1" id="year_1">
+<option value="1990">1990</option>
+<option value="2000">2000</option>
+<option value="2010">2010</option>
+<option value="2020">2020</option>
+<option value="2030">2030</option>
+<option value="2040">2040</option>
+<option value="2050">2050</option>
+<option value="2060">2060</option>
+<option value="2070">2070</option>
+<option value="2080">2080</option>
+<option value="2090">2090</option>
+<option value="2100">2100</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+
+<h2>What is the hazard with the highest</h2> 
+
+<form action= "/max_metric_for_year", method="post">
+<select name="metric_2" id="metric_2">
+<option value="VAR">VAR</option>
+<option value="Failure Probability">Failure Probability</option>
+</select>
+</form>
+
+<h2>in the year</h2>
+
+<select name="year_2" id="year_2">
+<option value="1990">1990</option>
+<option value="2000">2000</option>
+<option value="2010">2010</option>
+<option value="2020">2020</option>
+<option value="2030">2030</option>
+<option value="2040">2040</option>
+<option value="2050">2050</option>
+<option value="2060">2060</option>
+<option value="2070">2070</option>
+<option value="2080">2080</option>
+<option value="2090">2090</option>
+<option value="2100">2100</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+
+<h2>In what year was this asset's maximum</h2>
+<form action= "/year_with_max_metric", method="post">
+<select name="metric_3" id="metric_3">
+<option value="VAR">VAR</option>
+<option value="Failure Probability">Failure Probability</option>
+<option value="TIP">TIP</option>
+</select>
+</form>
+
+<h2> reached</h2>
+<input type="submit" value="Submit">
+
+<h2>Your results are shown below<h2>
+    
+</body>
+
+</html>
